@@ -10473,6 +10473,12 @@ fieldset:disabled .btn {
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 1280px){
+  .headline{
+    font-size: 52px;
+    line-height: 52px;
+  }
+}
 .semi-heading{
     text-transform: none;
     text-align: center;
@@ -10488,7 +10494,7 @@ fieldset:disabled .btn {
     font-size: 20px;
 }
 .custom-padding{
-    padding-top: 25.5rem !important;
+    padding-top: 6.5rem !important;
 }
 
 .py-21 {
@@ -22368,24 +22374,38 @@ img.rounded-3{
     height: 70px;
 }
 .oxy-video-container{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: visible;
-    z-index: -1;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
 }
 @media (max-width:767px){
-    .oxy-video-container{
-        overflow: hidden;
+    .flex-mob-column{
+      flex-direction: column;
+    }
+    .flex-mob-column .btn{
+      margin: 10px 0px;
+      background-color: rgb(26 88 211 / 0%) !important;
     }
 }
+.homepage-banner {
+  height: calc(100vh - 102px);
+}
+@media (max-width: 991px){
+  .homepage-banner {
+    height: calc(100vh - 150px);
+  }
+}
+
 .navbar .navbar-toggler {
   border: 1px solid #fff;
   margin-left: 0.5rem;
   padding: 0.5rem;
+  margin-right: 10px;
 }
 .navbar .navbar-toggler:focus {
   outline: 0;
@@ -22400,8 +22420,8 @@ img.rounded-3{
 }
 .navbar .navbar-toggler .top-bar {
   transform: rotate(45deg);
-  transform-origin: 16% 190%;
-  background-color: #624bff;
+  transform-origin: 23% 144%;
+  background-color: #fff;
 }
 .navbar .navbar-toggler .middle-bar {
   opacity: 0;
@@ -22547,7 +22567,7 @@ img.rounded-3{
 }
 @media (max-width: 992px) {
   .navbar-default .navbar-nav .nav-item .nav-link {
-    padding: 0.5rem 0 !important;
+    padding: 0.5rem 10px !important;
     border-bottom: 1px solid #e9ecef;
   }
   .navbar-default .navbar-nav .nav-item .nav-link:hover {
@@ -22560,25 +22580,26 @@ img.rounded-3{
 }
 .hero-video-parent{
     position: relative;
-    background: url();
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 @media (max-width:767px){
-    .hero-video{
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        top: 95%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
+    .col-sm-3{
+      width: 108px;
+    }
+    .custom-padding{
+      padding-top: 0.5rem !important;
     }
 }
 .navbar-dark .navbar-brand {
