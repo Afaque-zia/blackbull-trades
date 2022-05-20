@@ -6133,9 +6133,27 @@ fieldset:disabled .btn {
     height: 225px;
     width: 225px;
 }
+.bg-fast{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/Join-the-fastest-team.jpg);
+  background-size: auto,cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width:767px){
     .feature-card{
         width: 350px !important;
+    }
+    .fast-headline{
+      font-size: 72px;
+      line-height: 1em;
+    }
+    .ct-div-block{
+      flex-direction: column;
     }
 }
 .card > hr {
